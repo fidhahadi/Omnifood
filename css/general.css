@@ -67,6 +67,7 @@ Medium: 11px
     max-width: 120rem;
     padding: 0 3.2rem;
     margin: 0 auto;
+    
 }
 
 .grid{
@@ -117,6 +118,22 @@ Medium: 11px
     box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 0.2rem;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active{
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary{
@@ -152,5 +169,21 @@ Medium: 11px
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     letter-spacing:0.75px ;
+}
 
+
+/* HELPER CLASSES */
+
+.center-text{
+    text-align: center;
+}
+.margin-right-sm{
+    margin-right: 1.6rem !important;
+}
+.margin-bottom-md{
+    margin-bottom: 4.8rem !important;
+}
+
+strong {
+    font-weight:500 ;
 }
