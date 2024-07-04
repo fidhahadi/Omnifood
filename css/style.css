@@ -16,14 +16,18 @@ body{
     line-height: 1;
     font-weight: 400;
     color: #555;
+    overflow-x: hidden;
 }
 
+/* ******************* */
+/* hero section */
 
 
 .section-hero{
     background-color: #fdf2e9;
     padding: 4.8rem 0 9.6rem 0;
 }
+
 
 
 .hero{
@@ -51,6 +55,7 @@ body{
 
 
 .header{
+    position: relative;
     display: flex ;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +76,7 @@ body{
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 3.2rem;
+    gap: 4.2rem;
 }
 
 .main-nav-link:link,
@@ -103,6 +108,25 @@ body{
 .nav-cta:active{
     background-color: #cf711f;
 }
+
+.btn-mobile-nav{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+
+    display: none;
+}
+
+.icon-mobile-nav{
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+.icon-mobile-nav[name="close-outline"]{
+    display: none;
+}
+
 
 .delivered-meals{
     display: flex;
@@ -252,7 +276,7 @@ HOW TO SECTION
 }
 
 .meal-content{
-    padding: 3.2rem 4.8rem;
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 
@@ -333,7 +357,7 @@ HOW TO SECTION
     align-items: center;
 }
 .testimonials-container{
-    padding: 9.6rem 9.6rem;
+    padding: 9.6rem;
 }
 
 .testimonials{
@@ -465,6 +489,10 @@ HOW TO SECTION
     font-size: 1.6rem;
     line-height: 1.6;
     text-align: center;
+}
+
+.list-item{
+    line-height: 1.6;
 }
 
 .feature-icon{
