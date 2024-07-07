@@ -100,6 +100,7 @@
     }
     .btn-mobile-nav{
         display: block;
+        z-index: 99;
     }
     .main-nav{
         background-color: #ffffffd2;
@@ -230,6 +231,14 @@
     }
     .step-img-box{
         transform: translateY(2.4rem);
+    }
+
+    .testimonials{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 4.8rem;
+        column-gap: 8rem;
+        
     }
     .gallery{
         grid-template-columns: repeat(4,1fr);
