@@ -17,8 +17,12 @@
     <link rel="stylesheet" href="css/queries.css">
 </head>
 <script defer src="js/script.js"></script>
+
+<script defer
+src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js">
+</script>
 <body>
-    <header class="header nav-open">
+    <header class="header">
         <a href="#">
             <img src="img/omnifood-logo.png" class="logo" alt="Omnifood logo">
         </a>
@@ -26,19 +30,19 @@
         <nav class="main-nav">
             <ul class="main-nav-list">
                 <li>
-                    <a href="/section-how" class="main-nav-link">How it works</a>
+                    <a href="#how-it-works" class="main-nav-link">How it works</a>
                 </li>
                 <li>
-                    <a href="#" class="main-nav-link">Meals</a>
+                    <a href="#meals" class="main-nav-link">Meals</a>
                 </li>
                 <li>
-                    <a href="#" class="main-nav-link">Testimonials</a>
+                    <a href="#testimonials" class="main-nav-link">Testimonials</a>
                 </li>
                 <li>
-                    <a href="#" class="main-nav-link">Pricing</a>
+                    <a href="#pricing" class="main-nav-link">Pricing</a>
                 </li>
                 <li>
-                    <a href="#" class="main-nav-link nav-cta">Try for free</a>
+                    <a href="#cta" class="main-nav-link nav-cta">Try for free</a>
                 </li>
             </ul>
         </nav>
@@ -56,8 +60,8 @@
             <p class="hero-description">
                 The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. 
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-            <a href="#" class="btn btn--outline">Learn more &rarr;</a>
+            <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+            <a href="#how-it-works" class="btn btn--outline">Learn more &rarr;</a>
             <div class="delivered-meals">
                 <div class="delivered-imgs">
                     <img src="img/customers/customer-1.jpg" alt="customer photo" />
@@ -89,7 +93,7 @@
     </section>
 
 
-    <section class="section-how">
+    <section class="section-how"  id="how-it-works">
         <div class="container">
             <span class="subheading">How it works</span>
             <h2 class="heading-secondary">
@@ -138,7 +142,7 @@
             </div>
         </div>
     </section>
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
         <div class="container center-text">
             <span class="subheading">Meals</span>
             <h2 class="heading-secondary">
@@ -257,7 +261,7 @@
         </div>
         </div>
     </section>
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
 
         <div class="testimonials-container">
             <span class="subheading">TESTIMONIALS</span>
@@ -371,7 +375,7 @@
         </div>
     </section>
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
         <div class="container">
             <span class="subheading">Pricing</span>
             <h2 class="heading-secondary">
@@ -486,7 +490,7 @@
             </div>
         </div>
     </section>
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
         <div class="container">
             <div class="cta">
             <div class="cta-text-box">

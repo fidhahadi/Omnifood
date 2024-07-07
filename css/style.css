@@ -9,6 +9,7 @@ html{
     /* font-size: 10px; */
     /*10px /16px = 0.625 = 62.5%*/
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -126,7 +127,19 @@ body{
 .icon-mobile-nav[name="close-outline"]{
     display: none;
 }
-
+/* sticky navigation */
+.sticky .header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
 
 .delivered-meals{
     display: flex;
